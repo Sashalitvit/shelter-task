@@ -1,0 +1,170 @@
+/* section HELP*/
+
+.help {
+    height: 611px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.help-contant {
+    max-width: 1200px;
+    width: 100%;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.help-contant h3{
+    width: 308px;
+    height: 90px;
+    text-align: center;
+}
+.list {
+    max-width: 1026px;
+    width: 100%;
+    height: 281px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 120px;
+    row-gap: 55px;
+}
+.list .card {
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.list .card h4{
+    white-space: nowrap;
+}
+.list .card .icon{
+    width: 60px;
+    height: 60px;   /*корректировка*/
+}
+.list .card:nth-child(1){
+    width:82px;
+}
+.list .card:nth-child(1) .icon{
+    background-image: url(../main/assets/svg/icon-pet-food.svg);
+    background-repeat: no-repeat;
+}
+.list .card:nth-child(2){
+    width:150px;
+}
+.list .card:nth-child(2) .icon{
+    background-image: url(../main/assets/svg/icon-transportation.svg);
+}
+.list .card:nth-child(3){
+    width: 60px;
+}
+.list .card:nth-child(3) .icon{
+    background-image: url(../main/assets/svg/icon-toys.svg);
+}
+.list .card:nth-child(4){
+    width: 153px;
+}
+.list .card:nth-child(4) .icon{
+    background-image: url(../main/assets/svg/icon-bowls-and-cups.svg);
+}
+.list .card:nth-child(5){
+    width: 101px;
+}
+.list .card:nth-child(5) .icon{
+    background-image: url(../main/assets/svg/icon-shampoos.svg);
+}
+
+.list .card:nth-child(6){
+    width: 89px;
+    margin-left: calc(100%*84/1026);
+}
+.list .card:nth-child(6) .icon{
+    background-image: url(../main/assets/svg/icon-vitamins.svg);
+}
+.list .card:nth-child(7){
+    width: 101px;
+}
+.list .card:nth-child(7) .icon{
+    background-image: url(../main/assets/svg/icon-medicines.svg);
+}
+.list .card:nth-child(8){
+    width: 165px;
+}
+.list .card:nth-child(8) .icon{
+    background-image: url(../main/assets/svg/icon-collars-leashes.svg);
+}
+.list .card:nth-child(9){
+    width: 143px;
+}
+.list .card:nth-child(9) .icon{
+    background-image: url(../main/assets/svg/icon-sleeping-area.svg);
+}
+
+@media (max-width: 1045px){
+    .help{
+        max-width: 768px;
+        width: 100%;
+        height: 799px;
+        align-items: flex-start;
+        padding-top: calc(100%*80/768);
+    }
+    .help-contant{
+        max-width: 630px;
+        width: 100%;
+        height: 599px;
+    }
+    .list{
+        max-width: 630px;
+        width: 100%;
+        height: 499px;
+        gap: 0;
+        align-items: flex-end;
+    }
+    .list .card{
+        flex-basis: calc(100%/3);
+    }
+    .list .card:nth-child(6){
+        margin-left: 0;
+    }
+}
+@media (max-width: 500px){
+    .help,
+    .help-contant{
+        height: 745px;
+    }
+    .help-contant{
+        justify-content: space-around;
+    }
+    .help-contant h3{
+        width: 220px;
+        height: 64px;
+        font-size: 25px;
+    }
+    .list{
+        width: 290px;
+        height: 555px;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .list .card{
+        flex: 0 0 130px;
+        /* width: 130px; */
+        height: 87px;
+    }
+    .list .card h4{
+        font-size: 15px;
+    }
+    .list .card .icon{
+        width: 50px;
+        height: 50px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+    }
+    .list .card:nth-child(9){
+        margin-right: auto;
+    }
+}

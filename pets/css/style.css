@@ -1,0 +1,16 @@
+@import url(../../css/reset.css);
+@import url(../../css/constants.css);
+@import url(../../css/header.css);
+@import url(../../css/footer.css);
+@import url(../../css/page2-main.css);
+
+nav ul li:hover a{
+    color: #080808;
+}
+.burger .line{
+    border: 1px solid #000000;
+}
+#menu__toggle:checked + label > .line{
+    border:solid 1px #FAFAFA;
+    transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,106 @@
+/* section ABOUT*/
+
+.about{
+    height: 588px;
+}
+.about-content{
+    width: 100%;
+    height: 408px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px; /*%*/
+}
+.about-pets{
+    max-width: 308px;
+    width: 100%;
+    height: 408px;
+    margin-left: 60px; /*растояние между блоками*/
+    background-image: url(../main/assets/img/about-pets.jpg);
+}
+.content-text{
+    max-width: 430px;
+    height: 380px;
+}
+.heading-about{
+    width: 370px;
+    height: 90px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 14px;
+    margin-bottom: 25px;
+}
+.heading-about-mini{
+    width: 430px;
+    height: 96px;
+    color: #4C4C4C;
+    margin-top: 25px;
+}
+.heading-about-big{
+    width: 430px;
+    height: 144px;
+    color: #4C4C4C;
+}
+
+@media (max-width: 769px){
+    .about{
+        max-width: 768px;
+        width: 100%;
+        height: 1048px;
+        padding: calc(100%*80/768) calc(100%*166/768) calc(100%*100/768) calc(100%*165/768);
+    }
+    .about-content {
+        max-width: 437px;
+        width: 100%;
+        height: 868px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-pets{
+        order: 2;
+    }
+}
+@media (max-width: 490px){
+    .about{
+        height: 974px;
+        padding: 0;
+    }
+    .about-content {
+        max-width: 300px;
+        height: 890px;
+    }
+    .content-text{
+        width: 300px;
+        height: 494px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .content-text h3{
+        width: 250px;
+        height: 64px;
+        margin: 0;
+        font-size: 25px;
+        align-self: center;
+        text-align: center;
+    }
+    .content-text h5{
+        text-align: justify;
+        align-self: center;
+        margin: 0;
+    }
+    .content-text h5:nth-of-type(1){
+        width: 260px;
+        height: 144px;
+    }
+    .content-text h5:nth-of-type(2){
+        width: 260px;
+        height: 239px;
+    }
+    .about-pets {
+        width: 260px;
+        height: 353.6px;
+        background-image: url(../../shelter-task/main/assets/img/about-pets320.png);
+    }
+}
